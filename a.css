@@ -189,14 +189,14 @@ body > main .downloadResume:hover{
     text-align: center;
 }
 section.skills,
-section.portofolio{
+section.portfolio{
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
 section.skills > h2 ,
-section.portofolio > h2{
+section.portfolio > h2{
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -233,4 +233,61 @@ section.skills .progressBar .progress{
     background: #E6686A;
     width: 70%;
     border-radius: 2px;
+}
+section.portfolio{
+    text-align: center;
+}
+section.portfolio > nav{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+section.portfolio > nav .bar{
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+}
+section.portfolio > nav .bar-inner{
+    height: 100%;
+    background: #e6686a;
+    width: 10%;
+    border-radius: 2px;
+    margin-left: 140px;
+    transition: all 0.3s;
+}
+section.portfolio > nav .bar.state-1 .bar-inner{
+    margin-left: 0;
+    width: 32px;
+}
+section.portfolio > nav .bar.state-2 .bar-inner{
+    margin-left: 72px;
+    width: 37px;
+}
+section.portfolio > nav .bar.state-3 .bar-inner{
+    margin-left: 145px;
+    width: 100px;
+}
+section.portfolio > nav > ol{
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+section.portfolio > nav > ol > li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+section.portfolio > nav > ol > li:first-child{
+    margin-left: 0;
+}
+section.portfolio .works{
+    position: relative;
+    margin-bottom: 100px;
+}
+section.portfolio .works > .big,
+section.portfolio .works > .small{
+    position: absolute;
 }
